@@ -1,0 +1,150 @@
+@import 'css/reset.css';
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.sub-title,
+.star-average {
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.star-average {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: end;
+}
+
+.detail-still-img-box {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.detail-basic-info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: 235px;
+}
+
+.detail-text-info-box {
+  width: 800px;
+  padding: 30px 15px;
+}
+
+.detail-text-info-box > div:not(.title) {
+  margin: 15px 0px;
+}
+
+.detail-text-info-box > div:nth-child(2) {
+  opacity: 0.6;
+}
+
+.detail-star-icon-box {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.detail-stars-box {
+  padding-right: 5px;
+  border-right: 1px solid black;
+}
+
+.detail-detail-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+}
+
+.detail-detail-info-box,
+.detail-gallery-vedio-box {
+  margin: 30px 0px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.detail-detail-info {
+  width: 640px;
+}
+
+.detail-detail-info > div:nth-child(n + 2):nth-child(-n + 5) {
+  margin-bottom: 15px;
+}
+
+.role {
+  opacity: 0.5;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.detail-detail-info-star-graph-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.nick {
+  margin-left: 10px;
+  font-size: larger;
+}
+
+.detail-detail-info-coment-box {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+
+.coment-box-upper-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+
+.coment-box-upper-name {
+  display: flex;
+  align-items: center;
+}
+
+.coment-box-upper-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  padding: 2px 3px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.coment-box-coment {
+  padding-bottom: 15px;
+}
+
+.detail-gallery-vedio-box {
+  height: 360px;
+  width: 320px;
+  margin-left: 15px;
+}
+
+.detail-vedio div {
+  font-weight: bold;
+  margin-top: 10px;
+}

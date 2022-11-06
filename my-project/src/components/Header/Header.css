@@ -2,17 +2,24 @@
 
 .header {
   height: 63px;
-  width: auto;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  box-sizing: border-box;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #c2c2c4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 3;
 }
 
 .header__left {
   display: flex;
   align-items: center;
   gap: 32px;
+  margin-right: 390px;
 }
 
 .header__logo {

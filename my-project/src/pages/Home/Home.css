@@ -1,0 +1,97 @@
+@import '../../css/common.css';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home h2 {
+  font-size: 1.4rem;
+  margin: 20px 0px 20px 20px;
+}
+
+.home__lanking {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 21px;
+  height: 380px;
+  width: 1100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home__lanked-movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 380px;
+  width: auto;
+}
+
+.home__lanked-movies div,
+.home__lanked-movies ul li {
+  margin-bottom: 10px;
+}
+
+.home__lanked-movies__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 290px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #f9f8f8;
+}
+
+.home__lanked-movies__poster {
+  border-radius: 5px;
+}
+
+.home__lanked-movies ul li:nth-child(1) {
+  font-size: 1.1rem;
+}
+
+.home__lanked-movies ul li:nth-child(n + 2) {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.home__right-stick,
+.home__left-stick {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 290px;
+  width: 35px;
+  z-index: 0;
+}
+
+.home__right-stick {
+  right: 2px;
+}
+
+.home__left-stick {
+  left: 6px;
+}
+
+.home__left-chevron,
+.home__right-chevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: -2px 1px 3px gray;
+  cursor: pointer;
+}
+
+.home__left-chevron {
+  box-shadow: -2px 0px 3px gray;
+}
+.home__right-chevron {
+  box-shadow: 2px 0px 3px gray;
+}
