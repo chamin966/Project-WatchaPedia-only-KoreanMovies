@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'GothicA1';
+  src: url('../fonts/AnyConv.com__GothicA1-ExtraLight.woff') format('woff');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'GothicA1';
+  src: url('../fonts/AnyConv.com__GothicA1-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GothicA1';
+  src: url('../fonts/AnyConv.com__GothicA1-SemiBold.woff') format('woff');
+  font-weight: 600;
+}
