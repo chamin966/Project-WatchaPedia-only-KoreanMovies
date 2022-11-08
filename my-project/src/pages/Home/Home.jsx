@@ -3,7 +3,7 @@ import './Home.css';
 function Home() {
   return (
     <main className='home'>
-      <div className='home__lanking-box'>
+      <div className='home__lanking__content'>
         <h2>박스오피스 순위</h2>
         <div className='home__lanking'>
           <div className='home__left-stick'>
