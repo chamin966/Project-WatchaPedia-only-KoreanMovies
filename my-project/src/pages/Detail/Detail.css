@@ -4,21 +4,11 @@
   padding: 63px 0px 0px 0px;
 }
 
-.title {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
 .detail__text-info li:nth-child(3) {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #f4f4f4;
   border-top: 1px solid #f4f4f4;
-}
-
-.sub-title {
-  font-size: 1.3rem;
-  font-weight: bold;
 }
 
 .sub-title,

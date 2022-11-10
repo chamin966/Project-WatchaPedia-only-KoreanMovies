@@ -14,7 +14,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
           <ul className='search-result__movie'>
@@ -23,7 +23,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
           <ul className='search-result__movie'>
@@ -32,7 +32,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
           <ul className='search-result__movie'>
@@ -41,7 +41,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
           <ul className='search-result__movie'>
@@ -50,7 +50,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
           <ul className='search-result__movie'>
@@ -59,7 +59,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
           <ul className='search-result__movie'>
@@ -68,7 +68,7 @@ function SearchResult() {
             </li>
             <ul className='search-result__text'>
               <li>콰이어트 플레이스</li>
-              <li className='gray-word'>2020 ・ 미국</li>
+              <li className='gray-word-s'>2020 ・ 미국</li>
             </ul>
           </ul>
         </ul>

@@ -24,7 +24,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -40,7 +40,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -56,7 +56,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -72,7 +72,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -88,7 +88,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -104,7 +104,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -120,7 +120,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -136,7 +136,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -152,7 +152,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__lanked-movies'>
@@ -168,7 +168,7 @@ function Home() {
             <ul>
               <li>더 랍스터</li>
               <li>2015・아일랜드/영국/그리스</li>
-              <li className='gray-word'>예매율 25%</li>
+              <li className='gray-word-s'>예매율 25%</li>
             </ul>
           </div>
           <div className='home__right-stick'>

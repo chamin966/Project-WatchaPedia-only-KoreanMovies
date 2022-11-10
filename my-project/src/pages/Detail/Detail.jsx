@@ -85,9 +85,9 @@ function Detail() {
             </ul>
           </ul>
         </ul>
-        <ul className='detail__gallery-vedio'>
-          <li className='sub-title'>갤러리</li>
+        <aside className='detail__gallery-vedio'>
           <ul>
+            <li className='sub-title'>갤러리</li>
             <li className='detail__gallery'>
               <img src='/images/samples/stillSample.jpg' alt='스틸이미지' height={'88px'} width={'133px'} />
             </li>
@@ -99,7 +99,7 @@ function Detail() {
               <li>1차 예고편</li>
             </a>
           </ul>
-        </ul>
+        </aside>
       </ul>
     </main>
   );

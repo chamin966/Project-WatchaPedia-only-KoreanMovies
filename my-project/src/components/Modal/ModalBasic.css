@@ -1,0 +1,28 @@
+@import '../../css/common.css';
+/* 중앙 배치 */
+/* top, bottom, left, right 는 브라우저 기준으로 작동한다. */
+/* translate는 본인의 크기 기준으로 작동한다. */
+
+.basic-modal__background {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 999;
+  padding: 20px 0px;
+  overflow: auto;
+}
+
+.basic-modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 20px;
+  height: 430px;
+  width: 375px;
+  background-color: white;
+  border-radius: 8px;
+}
