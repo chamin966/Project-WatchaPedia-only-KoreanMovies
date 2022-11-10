@@ -1,0 +1,50 @@
+@import '../../css/common.css';
+
+.search-result {
+  padding-top: 63px;
+}
+.search-result__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 43px;
+  padding-right: 830px;
+  font-weight: 600;
+}
+
+.search-result__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.search-result__contents-title {
+  height: 45px;
+  padding-right: 1020px;
+}
+
+.search-result__moives-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 340px;
+  width: 1050px;
+}
+.search-result__movie {
+  display: flex;
+  height: 110px;
+  width: 350px;
+}
+.search-result__text {
+  height: 110px;
+  width: 265px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+  padding-bottom: 20px;
+}
