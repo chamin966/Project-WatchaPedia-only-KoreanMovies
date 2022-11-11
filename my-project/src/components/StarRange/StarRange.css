@@ -1,0 +1,7 @@
+@import '../../css/common.css';
+
+.StarRange {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

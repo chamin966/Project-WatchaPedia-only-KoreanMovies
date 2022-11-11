@@ -39,6 +39,12 @@
   justify-content: center;
   width: auto;
   height: 235px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detail__comment {
+  background-color: #f8f8f8;
+  margin: 30px 0px 15px 0px;
 }
 
 .detail__poster-img-border {
@@ -80,18 +86,16 @@
   border-right: 1px solid #f4f4f4;
 }
 
-.detail__detail-info {
+.detail__detail-info__comment {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #f8f8f8;
   flex-grow: 1;
 }
 
 .detail__detail-text-info,
 .detail__gallery-vedio {
-  margin: 30px 0px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -163,7 +167,9 @@
 .detail__gallery-vedio {
   height: 360px;
   width: 320px;
+  margin-top: 30px;
   margin-left: 15px;
+  /* dsdsd */
 }
 
 .detail__vedio .sub-title {

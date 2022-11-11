@@ -1,0 +1,35 @@
+@import 'css/common.css';
+
+.Comment {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  height: 65px;
+  width: 660px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Comment__text-area {
+  resize: none;
+  height: 55px;
+  padding: 5px;
+  width: 520px;
+}
+
+.Comment,
+.Comment__text-area {
+  border-radius: 5px;
+}
+
+.Comment ul {
+  display: flex;
+}
+
+.Comment button {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
