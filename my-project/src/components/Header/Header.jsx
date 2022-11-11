@@ -1,12 +1,18 @@
 import ModalBasic from 'components/Modal/ModalBasic';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
   const [modalOpen, setModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const showModal = () => {
     setModalOpen(true);
+  };
+
+  const onClickLogo = (e) => {
+    navigate('/');
   };
   return (
     <div>
@@ -18,6 +24,7 @@ function Header() {
             alt='왓챠피디아 로고'
             height={'30px'}
             width={'150px'}
+            onClick={onClickLogo}
           />
           <button className='header__title btn--none btn gray-word-s'>영화</button>
         </div>

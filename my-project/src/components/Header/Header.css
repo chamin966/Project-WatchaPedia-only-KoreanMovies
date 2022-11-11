@@ -24,6 +24,7 @@
 
 .header__logo {
   padding-bottom: 4px;
+  cursor: pointer;
 }
 
 .header__right {
