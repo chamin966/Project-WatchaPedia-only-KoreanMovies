@@ -3,6 +3,7 @@ import './Home.css';
 
 function Home() {
   const [move, setMove] = useState(0);
+
   const leftClick = () => {
     setMove(0);
   };
