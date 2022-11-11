@@ -9,7 +9,7 @@ function ModalBasic({ setModalOpen }) {
   return (
     <div className='basic-modal__background' onClick={closeModal}>
       <div className='basic-modal'>
-        <LoginModal />
+        <LoginModal setModalOpen={setModalOpen} />
       </div>
     </div>
   );

@@ -1,6 +1,18 @@
+import { authService } from 'fbase';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 import './LoginModal.css';
 
-function LoginModal() {
+function LoginModal({ setModalOpen }) {
+  const navigate = useNavigate();
+
+  const onSocialClick = async () => {
+    const provider = new GoogleAuthProvider();
+    await signInWithPopup(authService, provider);
+    setModalOpen(false);
+    navigate('/');
+  };
+
   return (
     <div className='loginModal'>
       <ul className='loginModal__login'>
@@ -18,13 +30,19 @@ function LoginModal() {
         <li className='loginModal__none-account gray-word-m'>
           계정이 없으신가요? <button>회원가입</button>
         </li>
-        <li className='loginModal__line gray-word-m'>
+        <ul className='loginModal__line gray-word-m'>
           <li></li>
           <span>OR</span>
           <li></li>
-        </li>
+        </ul>
         <li className='loginModal__social-login'>
-          <img src='/images/icons/googleSocialLogo.png' alt='구글 소셜 로그인' height={'50px'} width={'50px'} />
+          <img
+            src='/images/icons/googleSocialLogo.png'
+            alt='구글 소셜 로그인'
+            height={'50px'}
+            width={'50px'}
+            onClick={onSocialClick}
+          />
         </li>
       </ul>
     </div>

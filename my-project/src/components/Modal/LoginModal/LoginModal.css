@@ -75,4 +75,5 @@
   margin-top: 15px;
   border-radius: 50%;
   box-shadow: 1px 1px 3px gray;
+  cursor: pointer;
 }
