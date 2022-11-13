@@ -1,31 +1,31 @@
 import Comment from 'components/Comment/Comment';
 import StarRange from 'components/StarRange/StarRange';
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Detail.css';
 
 function Detail() {
+  const m = useLocation().state;
   const [score, setScore] = useState(0);
+
+  console.log(m);
 
   return (
     <main className='detail'>
       <ul className='detail__still-img'>
         <li>
-          <img src='/images/samples/stillSample.jpg' alt='스틸이미지' height={'400px'} width={'900px'} />
+          <img src={m.stilUrls[0]} alt='스틸이미지' height={'400px'} width={'900px'} />
         </li>
       </ul>
       <ul className='detail__main-info'>
         <li className='detail__poster-img-border'>
-          <img
-            className='detail__poster-img'
-            src='/images/samples/posterSample.jpg'
-            alt='포스터이미지'
-            height={'230px'}
-            width={'165px'}
-          />
+          <img className='detail__poster-img' src={m.posterUrls[0]} alt='포스터이미지' height={'230px'} width={'165px'} />
         </li>
         <ul className='detail__text-info'>
-          <li className='title'>콰이어트 플레이스</li>
-          <li>2018 ・ 공포/SF/스릴러 ・ 미국</li>
+          <li className='title'>{m.title}</li>
+          <li>
+            {m.prodYear} ・ {m.genre} ・ {m.nation}
+          </li>
           <li>평균 ★3.4 (8만명)</li>
           <ul className='detail__star-icon '>
             <li className='detail__stars'>
@@ -40,14 +40,15 @@ function Detail() {
           <ul className='detail__detail-text-info'>
             <ul className='detail__detail-text-info__basic'>
               <li className='sub-title'>기본정보</li>
-              <li>A Quiet Place</li>
-              <li>2018 · 미국 · 공포</li>
-              <li>1시간 30분 · 15세</li>
+              <li>{m.title}</li>
               <li>
-                <p>
-                  “소리내면 죽는다!” 소리를 내는 순간 공격받는 극한의 상황 속에서 살아남기 위한 한 가족의 숨막히는 사투를 그린
-                  이야기 생존 법칙 1. 어떤 소리도 내지 말 것 2. 아무 말도 하지 말 것 3. 붉은 등이 켜지면 무조건 도망갈 것
-                </p>
+                {m.prodYear} ・ {m.nation} ・ {m.genre}
+              </li>
+              <li>
+                {m.runtime}분 · {m.rating}
+              </li>
+              <li>
+                <p>{m.plot}</p>
               </li>
             </ul>
             <ul className='detail__detail-text-info__staff border-line'>

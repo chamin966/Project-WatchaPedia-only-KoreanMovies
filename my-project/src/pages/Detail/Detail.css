@@ -99,8 +99,9 @@
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding: 20px;
-  height: 900px;
+  padding: 25px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .detail__detail-text-info {

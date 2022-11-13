@@ -11,8 +11,8 @@ function Router() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Detail' element={<Detail />} />
-        <Route path='/SearchResult' element={<SearchResult />} />
+        <Route path='/Detail/:movieCd' element={<Detail />} />
+        <Route path='/SearchResult/:text' element={<SearchResult />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './MovieRank.css';
 
 function MovieRank() {
   const [koficInfo, setKoficInfo] = useState([]);
   const [kmdbInfo, setKmdbInfo] = useState([]);
 
+  const navigate = useNavigate();
   const timeStamp = new Date(Date.now());
   const date = `${timeStamp.getFullYear()}${timeStamp.getMonth()}${timeStamp.getDate()}`;
 
@@ -58,7 +60,7 @@ function MovieRank() {
               salesShare: kofic.salesShare,
               titleEng: kmdb.titleEng,
               prodYear: kmdb.prodYear,
-              posterUrl: kmdb.posters.split('|'),
+              posterUrls: kmdb.posters.split('|'),
               stilUrls: kmdb.stlls.split('|'),
               movieSeq: kmdb.movieSeq,
               nation: kmdb.nation,
@@ -80,16 +82,32 @@ function MovieRank() {
     getKmdbInfo();
   }, [koficInfo]);
 
+  const onClickMovie = (e) => {
+    console.log(JSON.parse(e.target.dataset.movie_info));
+    const movieInfo = JSON.parse(e.target.dataset.movie_info);
+    navigate(`/Detail/${movieInfo.movieCd}`, { state: movieInfo });
+  };
+
   return (
     <>
       {kmdbInfo.map((movie) => (
         <ul key={movie.rnum} className='MovieRank__lanked-movies'>
           <li className='lanked-movies__numbering'>{movie.rnum}</li>
           <li className='MovieRank__lanked-movies__border'>
-            <img className='MovieRank__lanked-movies__poster' src={movie.posterUrl[0]} alt='' height={'288px'} width={'198px'} />
+            <img
+              className='MovieRank__lanked-movies__poster'
+              src={movie.posterUrls[0]}
+              alt=''
+              height={'288px'}
+              width={'198px'}
+              data-movie_info={JSON.stringify(movie)}
+              onClick={onClickMovie}
+            />
           </li>
           <ul>
-            <li>{movie.title}</li>
+            <li data-movie_info={JSON.stringify(movie)} onClick={onClickMovie}>
+              {movie.title}
+            </li>
             <li>
               {movie.prodYear}・{movie.nation}
             </li>

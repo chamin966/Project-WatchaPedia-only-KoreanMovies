@@ -1,5 +1,5 @@
-import { async } from '@firebase/util';
 import ModalBasic from 'components/Modal/ModalBasic';
+import SearchBar from 'components/SearchBar/SearchBar';
 import { authService } from 'fbase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { useEffect, useState } from 'react';
@@ -59,9 +59,7 @@ function Header() {
           <button className='header__title btn--none btn gray-word-s'>영화</button>
         </div>
         <div className='header__right'>
-          <form action='get'>
-            <input className='header__search-bar' type='text' placeholder='영화를 검색해보세요.' />
-          </form>
+          <SearchBar />
           {isLoggedIn === false ? (
             <>
               <button className='btn--none btn gray-word-s' onClick={showModal}>

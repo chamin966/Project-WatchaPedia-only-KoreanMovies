@@ -38,6 +38,12 @@
   height: 110px;
   width: 350px;
 }
+
+.search-result__movie img {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .search-result__text {
   height: 110px;
   width: 265px;
@@ -47,4 +53,5 @@
   justify-content: center;
   padding-left: 12px;
   padding-bottom: 20px;
+  gap: 7px;
 }

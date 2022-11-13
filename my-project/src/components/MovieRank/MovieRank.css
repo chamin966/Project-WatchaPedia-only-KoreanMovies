@@ -40,10 +40,12 @@
 
 .MovieRank__lanked-movies__poster {
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .MovieRank__lanked-movies ul li:nth-child(1) {
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .MovieRank__lanked-movies ul li:nth-child(n + 2) {
