@@ -33,7 +33,7 @@ function MovieRank() {
       setKoficInfo(koficTmp);
     };
     getKoficInfo();
-  }, []);
+  }, [date]);
 
   useEffect(() => {
     //하나로는 정보가 부족한 두 API를 하나로 합치는 과정
@@ -83,6 +83,7 @@ function MovieRank() {
   const onClickMovie = (e) => {
     console.log(JSON.parse(e.target.dataset.movie_info));
     const movieInfo = JSON.parse(e.target.dataset.movie_info);
+    //여기에서 헤더랑 똑같은 타입의 object를 넘겼는데 새로고침 없이 잘됨
     navigate(`/Detail/${movieInfo.movieCd}`, { state: movieInfo });
   };
 

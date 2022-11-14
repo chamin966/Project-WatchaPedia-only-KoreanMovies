@@ -9,7 +9,7 @@ import './Header.css';
 function Header() {
   const [modalOpen, setModalOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userObj, setUserobj] = useState(null);
+  const [userObj, setUserObj] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function Header() {
       if (user) {
         //여기서 user에 유저 정보가 담기고 user.uid로 유저를 특정할 수가 있음
         setIsLoggedIn(true);
-        setUserobj(user);
+        setUserObj(user);
       }
     });
   }, [userObj]);
@@ -27,15 +27,11 @@ function Header() {
     try {
       await signOut(authService);
       setIsLoggedIn(false);
-      setUserobj(null);
+      setUserObj(null);
     } catch (error) {
       console.log(error.message);
-      // setError(error.message);
     }
   };
-
-  // 로그인 유무 확인용 log
-  console.log(isLoggedIn, userObj);
 
   const showModal = () => {
     setModalOpen(true);
@@ -44,6 +40,18 @@ function Header() {
   const onClickLogo = (e) => {
     navigate('/');
   };
+
+  const onClickMyPage = (e) => {
+    console.log('씨발', userObj);
+    if (userObj !== null) {
+      //그냥 userObj를 넘기면 이유모를 새로고침이 됨..
+      navigate('/MyPage', { state: JSON.stringify(userObj) });
+    }
+  };
+
+  // 로그인 유무 확인용 log
+  console.log(isLoggedIn, userObj);
+
   return (
     <div>
       <header className='header'>
@@ -56,7 +64,7 @@ function Header() {
             width={'150px'}
             onClick={onClickLogo}
           />
-          <button className='header__title btn--none btn gray-word-s'>영화</button>
+          <span className='header__title gray-word-s'>영화</span>
         </div>
         <div className='header__right'>
           <SearchBar />
@@ -69,7 +77,9 @@ function Header() {
             </>
           ) : (
             <>
-              <button className='btn--border btn'>내 정보</button>
+              <button type='button' className='btn--border btn' onClick={onClickMyPage}>
+                내 정보
+              </button>
               <button className='btn--none btn gray-word-s' onClick={onClickLogout}>
                 로그아웃
               </button>

@@ -1,6 +1,5 @@
 import Comment from 'components/Comment/Comment';
 import Staffs from 'components/Staffs/Staffs';
-
 import StarRange from 'components/StarRange/StarRange';
 import { authService, dbService } from 'fbase';
 import { deleteDoc, doc, serverTimestamp, setDoc, updateDoc } from 'firebase/firestore';
@@ -164,7 +163,7 @@ function Detail() {
                     <li>
                       <img
                         className='profile-img'
-                        src='\images\samples\profileSample.jpg'
+                        src='\images\samples\profileSample.png'
                         alt='프로필이미지'
                         height={'30px'}
                         width={'30px'}
