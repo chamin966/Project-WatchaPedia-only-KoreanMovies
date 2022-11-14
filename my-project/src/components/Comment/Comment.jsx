@@ -1,13 +1,11 @@
-import { useState } from 'react';
 import './Comment.css';
 
-function Comment() {
-  const [commentText, setCommentText] = useState('');
-
+function Comment({ commentText, setCommentText, onClickCommentSave, onClickCommentDelete }) {
   const onChangeComment = (e) => {
     let v = e.target.value;
     setCommentText(v);
   };
+
   return (
     <section className='Comment'>
       <textarea
@@ -20,11 +18,11 @@ function Comment() {
       />
       <ul className='gray-word-s'>
         <li>
-          <button>저장</button>
+          <button onClick={onClickCommentSave}>저장</button>
         </li>
         <li>|</li>
         <li>
-          <button>삭제</button>
+          <button onClick={onClickCommentDelete}>삭제</button>
         </li>
       </ul>
     </section>
