@@ -45,7 +45,7 @@ function MovieRank() {
       for (let kofic of koficInfo) {
         const kmdbJson = await (
           await fetch(
-            `https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey=777KP7DH9KI1K831H458&query=${kofic.title}&detail=Y`
+            `https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey=777KP7DH9KI1K831H458&query=${kofic.title}&detail=Y&nation=대한민국&ratedYn=y`
           )
         ).json();
 
@@ -53,12 +53,10 @@ function MovieRank() {
           if (kofic.movieCd === kmdb.CommCodes.CommCode[0].CodeNo) {
             kmdbTmp.push({
               rnum: kofic.rnum,
-              movieCd: kofic.movieCd,
               rank: kofic.rank,
               openDt: kofic.openDt,
               title: kofic.title,
               salesShare: kofic.salesShare,
-              titleEng: kmdb.titleEng,
               prodYear: kmdb.prodYear,
               posterUrls: kmdb.posters.split('|'),
               stilUrls: kmdb.stlls.split('|'),

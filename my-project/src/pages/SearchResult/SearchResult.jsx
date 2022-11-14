@@ -13,26 +13,29 @@ function SearchResult() {
 
       const kmdbJson = await (
         await fetch(
-          `https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey=777KP7DH9KI1K831H458&title=${searchingText}&detail=Y`
+          `https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&ServiceKey=777KP7DH9KI1K831H458&title=${searchingText}&detail=Y&nation=대한민국&ratedYn=y&type=극영화`
         )
       ).json();
 
       console.log(kmdbJson.Data[0].Result);
 
       for (let kmdb of kmdbJson.Data[0].Result) {
+        let revisedTitle = kmdb.title.replaceAll('!HS', '').replaceAll('!HE', '');
         kmdbTmp.push({
-          title: kmdb.title,
+          title: revisedTitle,
           prodYear: kmdb.prodYear,
           posterUrls: kmdb.posters.split('|'),
           stilUrls: kmdb.stlls.split('|'),
           movieSeq: kmdb.movieSeq,
           nation: kmdb.nation,
           genre: kmdb.genre,
-          vods: kmdb.vods.vod,
-          actorAndProd: kmdb.staffs.staff,
+          vod: kmdb.vods.vod,
+          actorAndProd: kmdb.staffs.staff.slice(0, 5),
           runtime: kmdb.runtime,
           rating: kmdb.rating,
           plot: kmdb.plots.plot[0].plotText,
+          repRlsDate: kmdb.repRlsDate,
+          kmdbMovieCode: kmdb.CommCodes.CommCode[0].CodeNo,
         });
       }
 
@@ -40,7 +43,7 @@ function SearchResult() {
       setKmdbInfo(kmdbTmp);
     };
     getKmdbInfo();
-  }, []);
+  }, [searchingText]);
 
   const onClickMovie = (e) => {
     console.log(JSON.parse(e.target.dataset.movie_info));
@@ -78,7 +81,7 @@ function SearchResult() {
                 )}
               </li>
               <ul className='search-result__text'>
-                <li>{m.title}</li>
+                <li onClick={onClickMovie}>{m.title}</li>
                 <li className='gray-word-s'>
                   {m.prodYear} ・ {m.nation}
                 </li>
