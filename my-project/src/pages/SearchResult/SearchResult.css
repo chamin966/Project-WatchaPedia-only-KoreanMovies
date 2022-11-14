@@ -27,16 +27,17 @@
 
 .search-result__moives-frame {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  height: 340px;
   width: 1050px;
+  gap: 10px;
 }
 .search-result__movie {
   display: flex;
-  height: 110px;
-  width: 350px;
+  height: 120px;
+  width: 340px;
+  margin-bottom: 15px;
 }
 
 .search-result__movie img {
@@ -45,13 +46,14 @@
 }
 
 .search-result__text {
-  height: 110px;
-  width: 265px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 12px;
-  padding-bottom: 20px;
+  height: 120px;
+  width: 240px;
+  padding-left: 10px;
   gap: 7px;
+  margin-left: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }

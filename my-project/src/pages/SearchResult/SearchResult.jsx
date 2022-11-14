@@ -64,8 +64,8 @@ function SearchResult() {
                   <img
                     src={m.posterUrls[0]}
                     alt='영화포스터'
-                    height={'100px'}
-                    width={'70px'}
+                    height={'120px'}
+                    width={'80px'}
                     data-movie_info={JSON.stringify(m)}
                     onClick={onClickMovie}
                   />
@@ -73,8 +73,8 @@ function SearchResult() {
                   <img
                     src='/images/samples/noImage.png'
                     alt='영화포스터'
-                    height={'100px'}
-                    width={'70px'}
+                    height={'120px'}
+                    width={'80px'}
                     data-movie_info={JSON.stringify(m)}
                     onClick={onClickMovie}
                   />
