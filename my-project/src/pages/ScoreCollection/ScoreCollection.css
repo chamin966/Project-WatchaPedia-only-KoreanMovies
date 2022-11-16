@@ -1,0 +1,33 @@
+@import '../../css/common.css';
+
+.ScoreCollection__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ScoreCollection__movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 900px;
+  padding: 30px 0px;
+}
+
+.ScoreCollection__movie {
+  margin-bottom: 15px;
+}
+
+.ScoreCollection__movies-upper__poster-img {
+  border-radius: 8px;
+}
+
+.ScoreCollection__star {
+  color: #ffa137;
+}
+
+.ScoreCollection__title {
+  margin: 7px 0px;
+}
