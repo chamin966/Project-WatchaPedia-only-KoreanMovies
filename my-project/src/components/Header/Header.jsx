@@ -42,7 +42,6 @@ function Header() {
   };
 
   const onClickMyPage = (e) => {
-    console.log('씨발', userObj);
     if (userObj !== null) {
       //그냥 userObj를 넘기면 이유모를 새로고침이 됨..
       navigate('/MyPage', { state: JSON.stringify(userObj) });
@@ -78,7 +77,7 @@ function Header() {
           ) : (
             <>
               <button type='button' className='btn--border btn' onClick={onClickMyPage}>
-                내 정보
+                나의 왓챠
               </button>
               <button className='btn--none btn gray-word-s' onClick={onClickLogout}>
                 로그아웃
