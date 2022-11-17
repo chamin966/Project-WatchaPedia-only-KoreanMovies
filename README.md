@@ -4,7 +4,7 @@
 
 # **프로젝트 결과 화면**
 (메인 페이지)
-![왓챠 클론 홈](https://user-images.githubusercontent.com/98478661/202478901-75597884-b700-46c1-beab-2547515ff5b8.png)
+![왓챠 클론 메인 홈](https://user-images.githubusercontent.com/98478661/202486160-dc4d620b-28d7-44df-bf90-4bbdd3a8a2f2.png)
 
 ## **프로젝트 소개**
 본 프로젝트는 왓챠 피디아 웹사이트를 결과물만 보고 혼자 따라 만들기 프로젝트입니다.
