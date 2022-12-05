@@ -53,7 +53,7 @@ function SearchResult() {
 
   return (
     <div className='search-result'>
-      <div className='search-result__title'>"콰이어트 플레이스"의 검색결과</div>
+      <div className='search-result__title'>"{searchingText}"의 검색결과</div>
       <main className='search-result__contents'>
         <div className='search-result__contents-title'>영화</div>
         <ul className='search-result__moives-frame'>
