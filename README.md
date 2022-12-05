@@ -6,6 +6,24 @@
 (메인 페이지)
 ![왓챠 클론 메인 홈](https://user-images.githubusercontent.com/98478661/202486160-dc4d620b-28d7-44df-bf90-4bbdd3a8a2f2.png)
 
+(영화 검색 결과 페이지 일부)
+![스크린샷_20221205_110240](https://user-images.githubusercontent.com/98478661/205534835-a21aa1e8-e9c5-48e8-b363-8aa9750a5a9a.png)
+
+(영화 상세 페이지 일부 1)
+![스크린샷_20221205_110724](https://user-images.githubusercontent.com/98478661/205534871-80b8974d-f864-48dc-9cca-8232629ac422.png)
+
+(영화 상세 페이지 일부 2)
+![스크린샷_20221205_110649](https://user-images.githubusercontent.com/98478661/205535130-476707da-5dc7-4ded-bfb2-d5818812c8cc.png)
+
+(영화 상세 페이지 일부 3)
+![스크린샷_20221205_110811](https://user-images.githubusercontent.com/98478661/205535003-04a8b479-5eb6-429d-b4f7-7d10bc4c43ef.png)
+
+(평가한 영화 모아보기 페이지 일부)
+![스크린샷_20221205_111128](https://user-images.githubusercontent.com/98478661/205535020-7e67bb66-a9c2-490a-b787-774888eb00fe.png)
+
+(평가한 코멘트 모아보기 페이지 일부)
+![스크린샷_20221205_111723](https://user-images.githubusercontent.com/98478661/205535026-19c210c2-c5fa-436e-8824-481682e5b348.png)
+
 ## **프로젝트 소개**
 본 프로젝트는 왓챠 피디아 웹사이트를 결과물만 보고 혼자 따라 만들기 프로젝트입니다.
 날짜에 따른 박스 오피스 순위 정보를 불러오기 위해 영진위 API를, 포스터 이미지, 줄거리 등의 영진위 API에서는 제공하지 않는 영화 상세 정보를 불러오기 위해 KMDB를 사용하였습니다.
